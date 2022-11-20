@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><center>Calculator</center></h1>
+    <div class="container">
+        <form action="">
+            <p>CASIO</p>
+            <input type="text" id="screen">
+            <br>
+            <input class="button number" type="button" value="7" onclick="btnClick(value)">
+            <input class="button number" type="button" value="8" onclick="btnClick(value)">
+            <input class="button number" type="button" value="9" onclick="btnClick(value)">
+            <input class="button operator" type="button" value="/" onclick="btnClick(value)">
+            <br>
+            <input class="button number" type="button" value="6" onclick="btnClick(value)">
+            <input class="button number" type="button" value="5" onclick="btnClick(value)">
+            <input class="button number" type="button" value="4" onclick="btnClick(value)">
+            <input class="button operator" type="button" value="*" onclick="btnClick(value)">
+            <br>
+            <input class="button number" type="button" value="1" onclick="btnClick(value)">
+            <input class="button number" type="button" value="2" onclick="btnClick(value)">
+            <input class="button number" type="button" value="3" onclick="btnClick(value)">
+            <input class="button operator" type="button" value="+" onclick="btnClick(value)">
+            <br>
+            <input class="button clear" type="button" value="C" onclick="clearscreen()">
+            <input class="button number" type="button" value="0" onclick="btnClick(value)">
+            <input class="button result" type="button" value="=" onClick="findResult()">
+            <input class="button operator" type="button" value="-" onclick="btnClick(value)">
+            <br>
+            <input class="button Del" type="button" value="Del" onClick="removeItem()">
+            <input class="button number" type="button" value="00" onclick="btnClick(value)">
+            <input class="button operator" type="button" value="." onclick="btnClick(value)">
+            <input class="button operator" type="button" value="%" onclick="btnClick(value)">
+        </form>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
